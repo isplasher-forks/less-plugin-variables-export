@@ -39,7 +39,7 @@ const renderLess = (contents, opts, success, done) => {
       done(err);
     } else {
       const output = JSON.parse(fs.readFileSync(OUTPUT_PATH));
-      success(output.default, css);
+      success(output, css);
       done();
     }
   });

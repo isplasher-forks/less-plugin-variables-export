@@ -1,6 +1,6 @@
 {
-  "name": "less-plugin-variables-export",
-  "version": "3.0.0",
+  "name": "@liang610/less-plugin-variables-export",
+  "version": "1.0.0",
   "description": "Adds output of all (not only top-level) variables to a JSON file(s)",
   "main": "lib/index.js",
   "scripts": {
@@ -9,27 +9,29 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kusmierz/less-plugin-variables-export.git"
+    "url": "git+https://github.com/liang610/less-plugin-variables-export.git"
   },
   "keywords": [
     "less",
     "plugin",
     "variable",
+    "export",
     "output",
     "json"
   ],
   "author": "Craig Michael Thompson <craig@craigsworks.com>",
   "contributors": [
-    "Adam Kusmierz <adam@kusmierz.be>"
+    "Adam Kusmierz <adam@kusmierz.be>",
+    "Yi-Liang Lai <yiliang.lai@gmail.com>"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kusmierz/less-plugin-variables-export/issues"
-  },
-  "homepage": "https://github.com/kusmierz/less-plugin-variables-export#readme",
+  "homepage": "https://github.com/liang610/less-plugin-variables-export#readme",
   "engines": {
     "node": ">6.0.0"
   },
+  "files": [
+    "lib"
+  ],
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^5.15.1",
