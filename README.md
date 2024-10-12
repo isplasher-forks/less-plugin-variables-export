@@ -27,7 +27,8 @@ const VariablesExport = require('less-plugin-variables-export');
 less.render(<css>, {
 	plugins: [
 		new VariablesExport({
-			paths: './node_modules/semantic-ui-less/definitions'
+			paths: './node_modules/semantic-ui-less/definitions',
+			filename: 'variables.json'
 		})
 	]
 });

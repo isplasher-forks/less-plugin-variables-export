@@ -20,11 +20,12 @@ const VARIABLES = {
 const LESS = Object.keys(VARIABLES).map(v => `@${v}: ${VARIABLES[v]};`)
   .join('\n');
 
-const OUTPUT_PATH = path.join(__dirname, '../input.json');
+const OUTPUT_PATH = path.join(__dirname, '../variables.json');
 
 const compareVariables = (input, output) => {
   const inputKeys = Object.keys(input);
-  expect(output).to.contain.all.keys(inputKeys);
+  expect(output['input']).to.contain.all.keys(inputKeys);
+  expect(output['default']).to.contain.all.keys(inputKeys);
 };
 
 const renderLess = (contents, opts, success, done) => {
